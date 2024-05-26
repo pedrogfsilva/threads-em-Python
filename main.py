@@ -8,7 +8,7 @@ def soma_parcial(lista, resultado, indice):
 # lista de números a serem somados
 numeros = [33, 23, 3, 44, 400, 10]
 
-# dividir a lista de números em duas partes
+# dividir a lista de números em partes
 parte1 = numeros[:2]
 parte2 = numeros[2:4]
 parte3 = numeros[4:]
@@ -16,7 +16,7 @@ parte3 = numeros[4:]
 # lista para armazenar os resultados
 resultado = [0, 0, 0]
 
-# criando duas threads
+# criando as threads
 thread1 = threading.Thread(target=soma_parcial, args=(parte1, resultado, 0))
 thread2 = threading.Thread(target=soma_parcial, args=(parte2, resultado, 1))
 thread3 = threading.Thread(target=soma_parcial, args=(parte3, resultado, 2))
